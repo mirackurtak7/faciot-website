@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={`${inter.variable} font-sans antialiased bg-white text-gray-900`}>
+      <body className={`${inter.variable} font-sans antialiased bg-white text-gray-900`} suppressHydrationWarning={true}>
         <Navbar />
         <main>{children}</main>
         <Footer />
