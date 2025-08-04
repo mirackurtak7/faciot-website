@@ -10,9 +10,15 @@ export default function Navbar() {
   const isDashboard = pathname === '/dashboard';
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    // Eğer ana sayfada değilsek, önce ana sayfaya git
+    if (pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+    } else {
+      // Ana sayfadaysak, bölüme scroll yap
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
     setIsMenuOpen(false);
   };
