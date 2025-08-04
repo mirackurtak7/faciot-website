@@ -82,6 +82,7 @@ export default function Footer() {
                       </Link>
                     ) : (
                       <button
+                        type="button"
                         onClick={link.onClick}
                         className="text-gray-600 hover:text-[#665EFF] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#665EFF] focus:ring-opacity-50 rounded-md px-1 py-0.5"
                       >

@@ -30,29 +30,44 @@ export default function Dashboard() {
     });
   };
 
+  const scrollToSection = (sectionId: string) => {
+    // Dashboard'dan ana sayfaya git ve bölüme scroll yap
+    window.location.href = `/#${sectionId}`;
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation Bar */}
-      <nav className="bg-white shadow-sm border-b border-gray-200">
+      <nav className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-8">
-              <span className="text-2xl font-bold bg-gradient-to-r from-[#665EFF] to-[#6B57FF] bg-clip-text text-transparent">
+            {/* Logo */}
+            <div className="flex items-center">
+              <span className="text-2xl font-serif font-bold text-purple-600">
                 FACIOT
               </span>
-                             <Link href="/" className="text-gray-600 hover:text-[#665EFF] transition-colors">
-                 Ana Sayfa
-               </Link>
             </div>
-                         <div className="flex items-center space-x-4">
-               <span className="text-sm text-gray-600">Gebze</span>
-               <div className="flex items-center space-x-2">
-                 <span className="text-sm text-gray-600">{formatDate(currentTime)}</span>
-                 <i className="ri-calendar-line text-gray-400"></i>
-               </div>
-               <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
-                 <i className="ri-user-line text-gray-600"></i>
-               </div>
+            
+                         {/* Navigation Links */}
+             <div className="flex items-center space-x-8">
+               <Link href="/" className="text-gray-400 hover:text-[#665EFF] transition-colors">
+                 Ürün
+               </Link>
+               <Link href="/" className="text-gray-400 hover:text-[#665EFF] transition-colors">
+                 Çözümler
+               </Link>
+               <Link href="/" className="text-gray-400 hover:text-[#665EFF] transition-colors">
+                 Destek
+               </Link>
+               <Link href="/" className="text-gray-400 hover:text-[#665EFF] transition-colors">
+                 Şirket
+               </Link>
+               <Link href="/iletisim" className="text-gray-400 hover:text-[#665EFF] transition-colors">
+                 İletişim
+               </Link>
+               <Link href="/dashboard" className="bg-gradient-to-r from-[#665EFF] to-[#6B57FF] text-white font-bold px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">
+                 Dashboard
+               </Link>
              </div>
           </div>
         </div>

@@ -24,12 +24,12 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/dashboard">
-                <button className="bg-gradient-to-r from-[#665EFF] to-[#6B57FF] px-8 py-4 rounded-lg text-white font-semibold hover:opacity-90 transition-opacity whitespace-nowrap cursor-pointer focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
+                <button type="button" className="bg-gradient-to-r from-[#665EFF] to-[#6B57FF] px-8 py-4 rounded-lg text-white font-semibold hover:opacity-90 transition-opacity whitespace-nowrap cursor-pointer focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
                   Canlı Demo
                 </button>
               </Link>
               <Link href="/iletisim">
-                <button className="border-2 border-[#665EFF] px-8 py-4 rounded-lg text-[#665EFF] font-semibold hover:bg-[#665EFF] hover:text-white transition-colors whitespace-nowrap cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#665EFF] focus:ring-opacity-50">
+                <button type="button" className="border-2 border-[#665EFF] px-8 py-4 rounded-lg text-[#665EFF] font-semibold hover:bg-[#665EFF] hover:text-white transition-colors whitespace-nowrap cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#665EFF] focus:ring-opacity-50">
                   Fiyat Teklifi Al
                 </button>
               </Link>
@@ -134,7 +134,7 @@ export default function Home() {
           
           <div className="text-center mt-8">
             <Link href="/dashboard">
-              <button className="bg-gradient-to-r from-[#665EFF] to-[#6B57FF] px-8 py-4 rounded-lg text-white font-semibold hover:opacity-90 transition-opacity">
+              <button type="button" className="bg-gradient-to-r from-[#665EFF] to-[#6B57FF] px-8 py-4 rounded-lg text-white font-semibold hover:opacity-90 transition-opacity">
                 Dashboard'ı Keşfet
               </button>
             </Link>
@@ -359,7 +359,7 @@ export default function Home() {
               </div>
 
               <Link href="/iletisim" className="block mt-8">
-                <button className="w-full bg-gradient-to-r from-[#665EFF] to-[#6B57FF] px-6 py-3 rounded-lg text-white font-semibold hover:opacity-90 transition-opacity whitespace-nowrap cursor-pointer">
+                <button type="button" className="w-full bg-gradient-to-r from-[#665EFF] to-[#6B57FF] px-6 py-3 rounded-lg text-white font-semibold hover:opacity-90 transition-opacity whitespace-nowrap cursor-pointer">
                   Contact Support
                 </button>
               </Link>
@@ -539,7 +539,7 @@ export default function Home() {
             Pilot projenizi başlatın, IT olmadan veri toplamaya başlayın ve entegrasyonlarla büyütün
           </p>
           <Link href="/iletisim">
-            <button className="bg-white text-[#665EFF] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap cursor-pointer focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
+            <button type="button" className="bg-white text-[#665EFF] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap cursor-pointer focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
               Pilot Projeyi Başlat
             </button>
           </Link>

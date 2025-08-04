@@ -78,6 +78,7 @@ export default function IletisimPage() {
               {/* Form Type Selector */}
               <div className="flex gap-2 mb-6">
                 <button
+                  type="button"
                   onClick={() => setFormType('quote')}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap cursor-pointer ${
                     formType === 'quote'
@@ -88,6 +89,7 @@ export default function IletisimPage() {
                   Fiyat Teklifi
                 </button>
                 <button
+                  type="button"
                   onClick={() => setFormType('demo')}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap cursor-pointer ${
                     formType === 'demo'
@@ -110,6 +112,7 @@ export default function IletisimPage() {
                   En kısa sürede size dönüş yapacağız. {formType === 'demo' ? 'Demo' : 'Pilot'} sürecinizi başlatmak için gerekli bilgileri paylaşacağız.
                 </p>
                 <button
+                  type="button"
                   onClick={resetForm}
                   className="bg-gradient-to-r from-[#665EFF] to-[#6B57FF] px-6 py-2 rounded-lg text-white font-medium hover:opacity-90 transition-opacity whitespace-nowrap cursor-pointer"
                 >
