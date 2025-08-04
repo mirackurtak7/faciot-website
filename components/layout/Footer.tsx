@@ -2,6 +2,12 @@
 
 import Link from 'next/link';
 
+interface FooterLink {
+  href?: string;
+  onClick?: () => void;
+  label: string;
+}
+
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -10,7 +16,7 @@ export default function Footer() {
     }
   };
 
-  const footerLinks = {
+  const footerLinks: Record<string, FooterLink[]> = {
     'Ürün': [
       { onClick: () => scrollToSection('urun'), label: 'Özellikler' },
       { onClick: () => scrollToSection('destek'), label: 'Destek' }
@@ -67,9 +73,9 @@ export default function Footer() {
               <ul className="space-y-3">
                 {links.map((link, index) => (
                   <li key={index}>
-                    {link.href ? (
+                    {'href' in link ? (
                       <Link
-                        href={link.href}
+                        href={link.href!}
                         className="text-gray-600 hover:text-[#665EFF] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#665EFF] focus:ring-opacity-50 rounded-md px-1 py-0.5"
                       >
                         {link.label}
