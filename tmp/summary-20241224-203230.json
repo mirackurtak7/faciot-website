@@ -1,0 +1,4 @@
+{
+  "summary": "Dashboard sayfasındaki navbar linklerini düzelttim. Ürün, Çözümler, Destek ve Şirket linklerini Link component'ından button elementlerine çevirerek scrollToSection fonksiyonunu kullanacak şekilde yapılandırdım. Bu sayede dashboard sayfasında bu butonlara tıklandığında kullanıcı ana sayfadaki ilgili bölümlere (id'ler: urun, cozumler, destek, sirket) yönlendirilecek. İletişim ve Dashboard linkleri ise ayrı sayfalara gittiği için Link component olarak kaldı.",
+  "current_status": "Dashboard navbar linki sorunu çözüldü. Artık sadece dashboard sayfasındayken navbar butonları ana sayfadaki ilgili bölümlere doğru şekilde yönlendiriyor. Değişiklik başarıyla uygulandı ve linter hatası yok."
+}

@@ -51,24 +51,28 @@ export default function Dashboard() {
                          {/* Navigation Links */}
              <div className="flex items-center space-x-8">
                <button
+                 type="button"
                  onClick={() => scrollToSection('urun')}
                  className="text-gray-400 hover:text-[#665EFF] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#665EFF] focus:ring-opacity-50 rounded-md px-2 py-1"
                >
                  Ürün
                </button>
                <button
+                 type="button"
                  onClick={() => scrollToSection('cozumler')}
                  className="text-gray-400 hover:text-[#665EFF] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#665EFF] focus:ring-opacity-50 rounded-md px-2 py-1"
                >
                  Çözümler
                </button>
                <button
+                 type="button"
                  onClick={() => scrollToSection('destek')}
                  className="text-gray-400 hover:text-[#665EFF] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#665EFF] focus:ring-opacity-50 rounded-md px-2 py-1"
                >
                  Destek
                </button>
                <button
+                 type="button"
                  onClick={() => scrollToSection('sirket')}
                  className="text-gray-400 hover:text-[#665EFF] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#665EFF] focus:ring-opacity-50 rounded-md px-2 py-1"
                >
