@@ -1,0 +1,4 @@
+{
+  "summary": "Dashboard sayfasındaki navbar butonlarının faciot.com'a değil kendi sitemizdeki ilgili bölümlere (ürün, çözümler, destek, şirket) yönlendirmesi sorunu çözüldü. Dashboard.tsx dosyasındaki Link componentleri button elementleri ile değiştirildi ve scrollToSection fonksiyonunu kullanacak şekilde düzenlendi. Artık dashboard sayfasındayken navbar butonlarına tıkladığında ana sayfadaki ilgili bölümlere doğru şekilde yönlendirilecek.",
+  "current_status": "Dashboard navbar navigasyon sorunu başarıyla çözüldü. Tüm butonlar artık doğru bölümlere yönlendiriyor ve development sunucu test için başlatıldı."
+}

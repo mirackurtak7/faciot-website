@@ -50,18 +50,30 @@ export default function Dashboard() {
             
                          {/* Navigation Links */}
              <div className="flex items-center space-x-8">
-               <Link href="/" className="text-gray-400 hover:text-[#665EFF] transition-colors">
+               <button
+                 onClick={() => scrollToSection('urun')}
+                 className="text-gray-400 hover:text-[#665EFF] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#665EFF] focus:ring-opacity-50 rounded-md px-2 py-1"
+               >
                  Ürün
-               </Link>
-               <Link href="/" className="text-gray-400 hover:text-[#665EFF] transition-colors">
+               </button>
+               <button
+                 onClick={() => scrollToSection('cozumler')}
+                 className="text-gray-400 hover:text-[#665EFF] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#665EFF] focus:ring-opacity-50 rounded-md px-2 py-1"
+               >
                  Çözümler
-               </Link>
-               <Link href="/" className="text-gray-400 hover:text-[#665EFF] transition-colors">
+               </button>
+               <button
+                 onClick={() => scrollToSection('destek')}
+                 className="text-gray-400 hover:text-[#665EFF] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#665EFF] focus:ring-opacity-50 rounded-md px-2 py-1"
+               >
                  Destek
-               </Link>
-               <Link href="/" className="text-gray-400 hover:text-[#665EFF] transition-colors">
+               </button>
+               <button
+                 onClick={() => scrollToSection('sirket')}
+                 className="text-gray-400 hover:text-[#665EFF] transition-colors cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#665EFF] focus:ring-opacity-50 rounded-md px-2 py-1"
+               >
                  Şirket
-               </Link>
+               </button>
                <Link href="/iletisim" className="text-gray-400 hover:text-[#665EFF] transition-colors">
                  İletişim
                </Link>
