@@ -1,6 +1,7 @@
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Suspense } from 'react';
 import Script from 'next/script';
 import "./globals.css";
 import Navbar from '@/components/layout/Navbar';
@@ -59,7 +60,9 @@ export default function RootLayout({
         )}
         <Navbar />
         <main>{children}</main>
-        <Analytics />
+        <Suspense fallback={null}>
+          <Analytics />
+        </Suspense>
         <Footer />
       </body>
     </html>
