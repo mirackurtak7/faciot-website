@@ -1,0 +1,6 @@
+{
+  "summary": "GA4 eklendi: `lib/gtag.ts` ve `components/Analytics.tsx` oluşturuldu, `app/layout.tsx` içine GA scriptleri ve sayfa görüntüleme takibi entegre edildi. README’ye GA kurulum talimatları eklendi.",
+  "current_status": "Site çalışır durumda; GA ölçüm kimliği `.env.local` içinde `NEXT_PUBLIC_GA_ID` ile verildiğinde izleme aktif olacak."
+}
+
+
