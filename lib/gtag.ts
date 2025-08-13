@@ -7,16 +7,25 @@ declare global {
   }
 }
 
-export const GA_MEASUREMENT_ID: string = process.env.NEXT_PUBLIC_GA_ID ?? '';
+// Prefer environment variable, but fall back to the known Measurement ID if not provided
+// Note: Measurement ID is not a secret and can be public
+export const GA_MEASUREMENT_ID: string = process.env.NEXT_PUBLIC_GA_ID ?? 'G-WPSXGT6G4X';
 
 export function isGaEnabled(): boolean {
-  return typeof window !== 'undefined' && typeof window.gtag === 'function' && GA_MEASUREMENT_ID.length > 0;
+  return (
+    typeof window !== 'undefined' &&
+    GA_MEASUREMENT_ID.length > 0 &&
+    typeof window.gtag === 'function'
+  );
 }
 
 export function pageview(url: string): void {
   if (!isGaEnabled()) return;
-  window.gtag('config', GA_MEASUREMENT_ID, {
+  window.gtag('event', 'page_view', {
     page_path: url,
+    page_title: typeof document !== 'undefined' ? document.title : undefined,
+    page_location: typeof window !== 'undefined' ? window.location.href : undefined,
+    debug_mode: process.env.NODE_ENV !== 'production',
   });
 }
 
